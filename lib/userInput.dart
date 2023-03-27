@@ -30,8 +30,15 @@ class _UserInputState extends State<UserInput> {
             Container(
               margin: EdgeInsets.all(10),
               child: TextFormField(
+                cursorColor: Colors.black,
                 decoration: InputDecoration(
-                  hintText: "Enter data"
+                  hintText: "Enter data",
+                  focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: Colors.black)
+                  ),
+                  disabledBorder: UnderlineInputBorder(
+                    borderSide: BorderSide(color: Colors.black)
+                  )
                 ),
                 keyboardType: TextInputType.phone,
                 controller: txttabledata,
